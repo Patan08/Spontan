@@ -1,0 +1,91 @@
+.LoginBg {
+    background-color: #646464;
+    height: 60%;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5%;
+    opacity: 100%;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+}
+
+.Logo {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.Login {
+    position: absolute;
+    margin-top: 100px;
+    font-size: 25px;
+    color: white;
+}
+
+.Data {
+    padding: 0;
+    margin-top: 170px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    color: black;
+    position: absolute;
+}
+
+input {
+    text-decoration: none;
+    size: 50;
+    height: 18px;
+    width: 450px;
+    border-bottom-color: white;
+}
+
+.Lbtn {
+    height: 40px;
+    width: 130px;
+    padding: 0;
+    background-color: black;
+    position: absolute;
+    margin-top: 350px;
+    border-radius: 10px;
+    border-width: 10px;
+    border-color: #646464;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit {
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: none;
+    margin: auto;
+    padding: 0;
+    height: 40px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border-color: #646464;
+}
+
+.add {
+    height: 20px;
+    width: 450px;
+    margin-top: 410px;
+    padding: 0;
+    color: aliceblue;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="navbar.css"> -->
+    <link rel="stylesheet" href="seniman.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <header>
+
+
+        <nav>
+            <div class="head-container">
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                                viewBox="0 96 960 960" width="26">
+                                <path
+                                    d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                            </svg></a></li>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li>
+                        <a href="search.html">Berseni</a>
+                    </li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="account.html">Account</a></li>
+
+
+                </ul>
+                <ul class="menubar">
+                    <ul class="left-menu">
+                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#F3F3F3">
+                                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                                </svg></a></li>
+                        <li class="hideOnMobile"><a href="home.html">PENDAR</a></li>
+                    </ul>
+
+                    <ul class="right-menu">
+                        <li class="hideOnMobile"><a href="login.html">Log In</a></li>
+                        <li class="dropdown hideOnMobile">
+                            <a href="search.html">Berseni</a>
+                            <div class="dropdown-content">
+                                <a href="seniman.html">Seniman</a>
+                                <a href="senirupa.html">Seni Rupa</a>
+                                <a href="senimusik.html">Seni Musik</a>
+                                <a href="senimedia">Seni Media Baru</a>
+                            </div>
+                        </li>
+                        <li class="hideOnMobile"><a href="upload.html">Upload</a></li>
+                        <li class="hideOnMobile"><a href="account.html">Account</a></li>
+                    </ul>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="cont-profile">
+            <section id="search-section">
+                <div class="search-container">
+                    <input type="text" placeholder="Search seniman...">
+                </div>
+            </section>
+
+            <div class="profile-card">
+                <div class="container-profile">
+                    <div class="row">
+                        <div class="card">
+                            <div class="our-team">
+                                <div class="picture">
+                                    <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="name">Michele Miller</h3>
+                                    <h4 class="title">pelukis</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="our-team">
+                                <div class="picture">
+                                    <img class="img-fluid" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCADNAM0DASIAAhEBAxEB/8QAHAAAAQUBAQEAAAAAAAAAAAAABAECAwUGAAcI/8QAORAAAgEDAwIFAgUDAgUFAAAAAQIDAAQRBSExEkEGEyJRYXGBFDKRobEjQlIHwSQzYoLRFRZT4fD/xAAaAQACAwEBAAAAAAAAAAAAAAACAwABBAUG/8QAKBEAAwACAgIBBAICAwAAAAAAAAECAxEEIRIxQQUTMlEiIxRhFUJx/9oADAMBAAIRAxEAPwD0Y5yd/euy3v8AvSYOTnPJpwGBsKAhwLb7mkz80uT7UnTmoQUZPc/rTwT7n9aQLtS7CoQXf3P6133/AHrq7aoQ7f3P60hJ9z+tLUU0qxL1dz+X60vJc458qCmXT6HswX8zfvTesHcZx9aA65GLFmznO1BahfSWMPSGw020Td1HevOZOdlz5PDG+jX9tQtssLnVIIHEKlpJyekJHvuexNd16+4BW3hiBGVE0o62+1VVrmx0q91iNPNuvJlMWfUEOekNgj7155Je3F01/d32r3SXKDrt0RXZriTHBOQqqNq7WLhpLdPbM9V30eoPe63bkm6tf6Y/My9OMe46TQN5fG7cdJbylUED5xuTQvhHUdUutK1BtT6mtokMcU8vMjspBVc8496ijjeSSOGJsPK+EJzjb/an/Yx435i22+jQW4sbbS5dRlRpfKikmkCnLDoz6RVPp/jXSrybyjDLaFmCI7N1w5PHXjimwXd9prywzRqySApNFKP6UgOxwaEfTNFkS8Swvp9MS8wbmCSISwltiAjAFgKbOWb/ABZGmjaiYAqHIBfdSDlGHupqTq53NZu3ezs9KltLnUYbuWMk2fkq/WvsCWptvrrwTWsF2FNvKREkwzmOQ8eZ2weM0D/i9siNN1DuTTc/JrsnuKQ0aLHZ+f3ru3P70zau23qEF6T7/vXYb5/WuyKXIqiCck/WndqaOfvStkUQJ2K4Vy5NPqEEB5HtS9hXd67b5qEOrq7ilqiCEbVS3d0JJiR/y09K/PzVjfTiGBiD62yqj61ktT1K10y1kuZzgAHy05MkmNlAri8/JV6xR7NmBJLbJtV8SaZoyJ+ILS3EgzHBFjqI7FmOwFZmHXZPEBujIiRT2/8AUhiRs/0huQM9/eszZ2uo+KNXkZywVmEtxKPyxR9lGdvgV6jpukaHpsUUVvaR5APVK/rkcnkljSv6eCk67otp5Ct0jxP+DhNtJEk0JBwrnpYA9t9qVtQ0LzpJItEsg7DPVcOpUNjkKu1aFtP0ZlLGygIOzegcHvTV0jQ8hksYicjGxIov+YlfAH+OzOzatd3zQw48wL6YbezjKwqT7ADFaPSdNmgAuboAXDL0hBuIlPI+vvVjDBFCMRQxRLxhFUfxU31Nc/lfU7zz4z0HGFT2MlhgnUrKiupGD1AVVzaFbOf6EssJ29PpZf33q39HvSdcfuK52LkZMb/ixjhMz/8A7fuuoEXkWM5z5Xqx8Va2ulWdvDJFIBOZCDI0yg5PwOMUWZY/8hTfOj9xT652a1psr7f+hUxGwiGenGFBOcY+TUmKhLRuVZXGQamBzXd+ncrynxt9iMmNr0JjFdgU6uxXaM43FdilwDS1RZ2UJO+N6TA98ilKDJ37mmlNx7UQJIo22/mlpqrjO1cB9ahB1JXfeuOdqhDq7infammqZEZvX9Ris0ubmXLRWybKvLMeBzXlnVqni3VejPlwoAW56II9hsOOqvS9SiivY7+FwMTLKgB4DYIU1WaLptto9oltGeuZj1zye7n2+B2rz9cmMbq/+3wdBY/JJB+l6VYaVbJb26lVxl2O7yN3ZzVorxDpVVLMcUCHkZhGm7nk+wokPDaoSzerv71w8t1krbH+OukFgquTIeQfSO1QvqMEDFMgKVyu/eqS/wBahUOqsA3Cjk5rPzXtzcMOn059+afg4l5PaJ/6aybXVUuAwGAWBzzQTeILl8mNSRgY9qpre1d+tHzkryfc+1WtnYb4bttXSj6dPyC8kroQ6tqrD2HPyKZ+M1IqW6yM4wNzmrldPhxgjNEJZ2yrgqMitM8CP0C+Qv0Zl77VFbo6zn6GlGoakoGSAMYJPNX01taqwd1QZ7sQB+9Dy2llOPRJHn2DKf4o3wJ10ilnXyVkWo3nUMSHNW1prcsbqk242yap57RoG42G4xQUkpWYe2F2rmXheOjYpnIuj0i3njuE64znA33FTZrJ6BdFbhYs+mYcH3rWYFd3h5Xkjv4OTnx+FaFHem70vvXY+lbRAuDk/U0u4pSNz9aT0n3qyjhneu+9KMb11Qh2K6urtqoh2eRS/wC4pNuaQunOaXkyxM9sKU9mNuWPnTDOCJH/AJqBGKhm5JPSPrRGoL03d2o4EjMPod6hQgDq7KMj615DL3bZ149ImNytpFs2ZnyXY+/sKprm8mmZgD6v2rrmR3fOd2OB8CpLe2XYnfvWrjcdV2y6rxRR3VreHqkQkuAWyc5rNyXuoxSeqV0IbJG3VXrVtHb4HUg43yMmh9Q8LaBquGkiMUvaSE9LcdxxXfxQpRgyZGzza217VY5A3nM6jHWHUHb61uNO1drmGKVRyOB2xXQ/6faXGD13c8ikn0+lc/UgZqwtdDt9OcRwqRF04Ck5xjfOTTXKFeQdbXjy4HS3HPzTrq6kiWXYjy42ds+yjJNF2q26kYAJ/ejJ7O3uIiCMAgcj+atSC+jxPWNb1O/uHeaRljViIohlUVeMkDvV/wCD45pZoHk6280kFNx0oM+o5rZ3Pgzw/dusk0TqwwQY26QSN+KttO0bTdNBNuhLkYLuctj2o9FbOeygdCrIDkYAPtj3rEalbLbX0kS8Agj771v3LA/fasLrUqvqc/T/AGlRn5xisPMifDZt4tPeg3QU6tQt879PUR9cGtodgSTWN8PdX45GAyERyfjIxWraQnORS/p/Utgcrux5kpnmNTeoZ4Ndlfc/pXT2jIGk7n70lcxAJye5phkQd6z3ycWP8mWobHjg12R3NDmcnIXYVEzk8tWDL9Uifx7GThb9hTOi9/3qMy52WhGfG/Vtmk85VG5/SuXl+pZb9DpwpBBlb/KoZJgo5oSS4yele5qHq5J9jWCsl122PUJAV8xaZn/y2+tBTErHt3OKmupkjHq5Z+kH5oac9UW3K80yF0PlaK0yAzFMZ6e/zVpCSAD8VSoWW7fbY4NXMecA/ArvcdJSIzBiSN2+tErc9I3bPtQKBzwcD3NShEOMnJz37VtlmNos4bn8uSTRTdLg7jqIwP0qo82OJTgjPG4zXLfLlcv24xinJgePyVtxrR0u7kS6QqOsKhwSj59iNqurfX0uZI4EjbMjBRjBwMbnag7h9PvImWcIwI2LAbEdwTVfos9rb3M6qxYA9KtsSVq0M6cm6YFosd8bH5oAzypkHORzvSRXyNtvztSXbRumSME44xTWI0Ibr0SPnZFZt/gZwKw0pMtxLIw/M5b9TWmvpfLtzHHkPICoJG24xVdpely3lygkUi3jIeZ17gf2r9a53K8r1KNuBqU2XPh+0aG2e5YHM2yA89APNWxxn681P0BEVEAVVGFUcAChm2J5rTix/blIy3Xm9ike1JiuPem5NMAJpHJYkfNDtL05JyTUMl2o6ugb/Iof8WCSCteGuqt7Z1FCRP8Aim3wOSe9MaeU7DntUJlQDqx9K5TsXbvwKHReiTJG7Elu9RPLsPakZzQsjM7BV+CfpV62XoIQk5bueBSM+GA3x3NdGMKT7DAqF8nuBUIiq1NmJCZOAxNQ203Woic+r571LqDBZFycjG9V7A5DIdueoc1shbkcl0NvYpVdXTbpOWznj7VaWjrJEjA5GNydsmg1mW4Xpk26dh/106GU2shJGUP9uNgfpXR4+Tw6YnJPki3G3f5YnsPgV3UvIbJ929vgVEG6gGyMsPsKbXTTT9GLX7JWlJ7bb4+aBnkkJHQp9qKLDvTSRxtRbBaKwQSzP0yuek5yoyNqJTS0XMkJKsDyCaIwM5xvUiO4yo4o0ymx9qZkIUsSR81bRhmA6/5oOFEADHBJ96Pto5Jnwo9A5PbFGnsWx7Wc108ar0CAf8wuMnH/AE1awwQ20axQqFReMd/k05FVVCjtT6YpXsryetDWoZ+TvRW1DONzVtAkZrtvekORUbHehLAryE2srIc9J3UnvQpwCMHmtJfWi3UTr/eMlD81mxG0bMrjIBwCeQa8rzeM8N9ejp4ciqRVBJz2zSyyAYGeKXqVRQUz5c1iSGpbCGf2PNNOEG27NzUSsAMnsCaaH6mXuSRU0X6DgQiKpO5GTQ8ssaBmZgABnOaRrSdy0jzdGRlVX/eqHU3uoVeIMCxGzUeKFdeOwWtLaKvWNSkmmxH6Y1O3Zm+tSWFz5sRUnJA9Q71QzF+pg+Sw710Fw8Dgqdu49xXpXwp+1qTDPIpV2aYhWyVOw4BPBpnnzxH14ZSe/OKZHLFcIjqeRk47H2NKyg9zz3rlVLl6Z0paa2GW96q7K3/ax/ii/wAYndSD271RmFskhhn5FOVrmPGGU/vT4yVPoXeNMuvND/T5pVdB71XJcy9PqAz8VE9w5+BkVsWXa7Mv23st2nhQjqbnYCpIp0fr6DsgyTVC0sYb1sM9t81PFeW8MZMsoRJmALHv0nPSMVIu6tJLoDIplGtsII7keZI7BQ2CFOOK0UIiRQqAADislpd1H+HWRGDJIxYEHY1dw3YIFYuTzbwZml6JGPzjZb81wBBqCOdWwCanznG+R8V1OLy4zrexF43JzHHahnb1GijihH5NbGxZG2CagbGTvUrA71CRvQv2WXZ5O/c1W3tsu8yLyf6oHt7irAsfVlR34qOWUCJ99yDyKVyMM5Y1QUU5ezMTpIgLJ6kxvjkCq12DEnv3B2NWsjspLJtzmoGa1lz50Iz/AJYwf1FeWycesbZ0pyJoDV8jHwaItIwx8wg4U5Gff4qFLZhclVOYAMknsOwouaZIl6E2AHHYVmr9Dt7FmmAyCe1UWpMkin/IEdNSXF0csM1WzOz7nOKfhhp7IU99BnEyDYjDiqobMa1ChWQqw2JOxqi1C1e3ZpFGY24+DXouHyd/wZzs+LT2hILprV+T5bfmHtVkNQtyAcn9KyBuZevJOV2GMUdFLso3wdwfmtF8SMj8gJz1C0X7ajCPyhj9qibVMZKxE/XFVeTz711WuBjRHyaYc+pXJ/KFUfrQrXNw+cytg7kDYVFkUgIzueK0Txsa+BTzU/kk6nP9x3985pl4ZWjjCscQKZSPdScE0XaojOSRkYxUSXMMGpI8kPXCAYnVxsVbY7HatU4VK2hXm37NRoTzQaJZF8jzHmMef8C2RV1b3eAMmq15LeW2g8hgFjz0oR0kD2AqFZCteT+oYP7WdXjWqg1kV7np3+tWttdrsDkjbvWKhuMY3q1tbs5H1FcxeWF+UjbhUjYE5HUPahmxvnmhrW7z6Scg7USxByRXouLzZypJ+znXjcsjPeoGBydqn3/moT1V0GKLc49VVd3IzFkXOBz9asTIvq3FV7gZckcmpfoi9la6HB+lBMhO2Nydqtio3oRo1VmbP0rlcqljnbNOLt6IGKwx9Pfkk1T3E5LEA0feNscH3qkY/wBQgmuHjSp7OglojdiTmmEZWpHRlpApK4Xc961JFNg5/Kcd9h9artQkJQRN770beTx26AEDbt7kVSSzNPI0jADJ2HsK6fDwuq8mZORkWtFc1jhyerYntUzIESJV7ZySKI270yTDFQBsv713VOjnN7IgWH9p/Sl6n/xNEgAgU0gjO9HooH/qNwuAO9OjhMhGTt3xTJry3h2GWbjbH70kGrxxnBh+9WvZC+tFVVCwxkHuW3/Sob6zMrmQlcjYgc5+1da334lQUOFx22NE4PpbO3Ld81pemtCvTNxo2kWmoaXayXCYboxEyn1LgdJzQeoaBc2gaRMyxDPqA3A+RVx4UlEmm+XnaGVwPgH1b1oCoIIIBB5B3FcXk8Wbf+zbjy+J5hgp3qeCVgwye/vWl1jQY3D3NmuHGWkj3wQBklRWRIZGxwQfbFcHPgcPTOjjyKkaW0mO29H3F+LWyvbgkf8AD28sozwWVcgVloLplOM8VR+KPEHXbDTreTJduq6I/wAcbLms3H413lXiVlaUno+majBqlla3kJBEq4YZ3Vxypos1494T8SNo90IbhmNjcsqygb+W3AdR/NevI6SIkiMGR1DKy7gg8EV6vx10c1hZJy33qFzj6U53GSdhQkj52B3JwKGmUNdwCcUFNJgEk+9DrqumzXE1tFdRtNExV1B3BGxArrph0bEZxXnPqFVV+PwdDBK1srricn0jHeq9/wA2fepZPUfvQ8wyGA4wRQ4MXk0kPyV4rYJd30iMqwMAV5bGckDiqqXVL+VfzhGBwWjGCadJlRJnlDj/AO6CXcnNeixcWJS6OVeamziZX9UjFmPdiTXDYYzSll7CmZJPBrbMqVpIS237Hgg07pGc0qrkfzTwqjG+f4pmgTlH0oS/laKEkD1McZ9qNAHxUc8Ec0bRvwRse4NWWZ7yyY/OJDdR2Hf700KG6idh8Y5o86VNlgkwK9sgjb5pn4KONgJpQccqgOT8ZoWmWT6QXBk3PQuMfU1oI3Pq4PFUkE6xDoijCpng5JP1NGR3M0h6QAo7kDfFNlvQDPRfBMwI1KHqAIMUig+24NbMfSvP/BEbm8vJQcqtuqn5JbbOa3+B7fpWbJ+QyfQ4gEEEHBBH2ryHxTe3Gh6zeWbweZbN0zWzdWG8twG6c8bV67uP7j+xrzD/AFRuLXzNItfJX8UElneYAj0MQoQ/pmkXii/yQybcvoxN14gu5gVhAhXBBxuxB7ZNUzOznLEkk5OTyaUgnNNooxzH4oKrdex45969T8Ia6P8A0WGGcdT20skCk89Awy9/mvLATjgY7e9WNhqL2Ucka5wz9f7Af7UT7BPcxNDPGksLq8cg6kdGBVgfYiqTX9Uj0rT7i5Zh5rK0VsuQGaVgQDjnasZ4M8QSwXEelXMn/DTFjbs2P6T89OT2NVHinV5NU1S5Kufw1u3kWyj8vSmxb6k0Hh2UUi3FxHKJ0kZZeov1A75zmtPp/i+U+XFfrkceauxx8jismaQLn9Rx3zVZcGPKtUgoyVPo9OjminRZYnDo24IIP8VFJncUDoFjNZ2XXOT13BEgj/8AjXGw+vvVhJWHHx5x10Nq3S7KG6ODP8sKEC7E9zRVyVMkmSPzd/ih+tO7DjNdaPRkY0Q57j6ZqRUIxnimebGDnqApwuIcbuvzTNAjpOlF9hyT8UE0xd+mNuKnmmSRGVATscnG2Pitr4b0+zuLOylEMTSFMOxVScg96qq0EkYgTKD09e68nP8ANc15EvcyHt0jb717Xa6Tp0OWFpa9Tj1nyYyT9dq83/1GtrOy1TTxaRxQ+bZ9UiwoFUnqO+BQq9k0ZN5ruY43VD/aP/NLHattnj/971BHLKcdMmd+CAaJMlwendd+wFMRQQkCDbO9ERLGp2BGOTUUCOygkhN+TuasIFtEb+p1SYGcHZc/Qb0xIFs3fglB+FvZQmOqVUDe4UVr14rK+DZhNZ3ZUBUWYAKvGcbmtSMjNZMv5DZ9DqoPEnhjT/EcMCTu8Nxb9XkTxAEjqHDg8ir6nf8AigCPIbv/AEu16IFrS9sbjAJ6X64nPsNwRWV1Hw34g0re+sJVXgSRgyRn/uSvomopFVgwYAj2IyP3qFHzQsUjMiKjuzN0qqKxYt7AAV6ToHgO3ksI7jVAwurg+Z5fHlR/2qR79zXoP4a1VupYIVYHOREgP6gU+qdFnzertGyupKsDkEbEUjMck853/Wk5wKQ59P03pwI4ZNWGjW5udRs48BlVxM+RkdKb71XD2rZeF9O8qKW/l2aYeXCCMERg7t96Xb0i12zQuwqBwDz3qSQj7UNJIBnPasnyNRS30arcOMDf1Z9/igHZQfSAPfAo7U361VxjIYgke1VBLYLZroQ9oQ12GgIwBIB+uKZ/RU7dAP2oUXIMJCn1LkVXSytn8xJPzR7BLO5uVRDxn2BFT+HfEdxo2opcYZ7eQiO4hz6WQkZYDjI7VnSWPJ3pRyDS67CR9Lm6T8FLexgOqWsl1Gv+fTEXUbV4L4h8R3niG5gubqKGOSGNol8gFQV6iwBya9d8FPPN4Y0gTMzO0EkYLjfp6nVftXiWrWkljqOo2khUvb3MsZKjAJDcgUKLII5zGNhk0bDdoE65CCR+UfNVVKKYqK0XsN6r7lhsNhxUiX6evqOM5AOaz4Jyd6kDNxV+eitHp3hLxV4e0mxuIb2WYSyTFgscRYYx3Oa9Is7u1vrW3vLZ+uC4QPE3GQfcV82qzdsfevoPw8qromjBIliX8HEehT1AZGcg/PNIt7ew0tFvtS00U6hRZwPNMY079RTGBAJ7c1bIDkglqSkb8xpMmlkPnB4pIziRZEPtIpQ/o1N71uP9RYwNQ02UfmktmU4G3oc71kbK2W5uYonYhSd8DfApzvSK12G6LpZv5g0mFgjPUxJwXx/aK2rIY0VUGFUYUDgAdhVZCi2/lpCAiphQAOR81dKOpEJ7jNY7yOmPUJFdJO6qQf3oC4uio344O1XElujkk9hVfPDHuhAIoZ9l6Mze37K/lAEjYvn2PtQX4zZhjY1JqsCQ3jqpJBCnftkUAeTW2HpCK9jzJt6cjJOajySdzSkb4+9L0jb5o9laEx70fpOmz6peQWsYwrMDK5z0pHnfJ/inWGnx3kyRtIVU7nAyfpzWk0+7Ol3DW1vFH09ZRmI9TdJ5Joaomj1TT/w9paWltCOmGCNIVGdwBwTWQ8U+BLjV72bUdNlhSSYAzRTZAd1XHUrD3qeyurzUXhh84woGV36FDF8Hgk1t7bOMZ2FAq2TR896voOr6HJHHfwhPMz5bK3Urgc4NVW9fQXi3StP1HSbr8TErPCjPbyY9cTnuprwSeLypHQMSFYrnGOKNMhFSgkVwHNT2cIuru0tSxVZ5o4iwAJAdgDgGiIPtLa4u5ooLaNpJZHRFCAlQWOB1EV9B6HZT6fpGmWUx6pbeBUY5J35xXaZo2laZBbJa20KssKI0nlr5jlR+Zj71aBPn9qWyCLxvS/tShed6Xp+apEG/eo2PIqQr80jJnq37e1WywN+T70ypWXJ5pOj5/agZD//Z">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="name">Joko_Salman</h3>
+                                    <h4 class="title">musisi</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="our-team">
+                                <div class="picture">
+                                    <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="name">Justin Ramos</h3>
+                                    <h4 class="title">video editor</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="our-team">
+                                <div class="picture">
+                                    <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="name">Mary Huntley</h3>
+                                    <h4 class="title">Musisi</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="our-team">
+                                <div class="picture">
+                                    <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="name">Patricia Knott</h3>
+                                    <h4 class="title">fotografer</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="our-team">
+                                <div class="picture">
+                                    <img class="img-fluid" src="https://th.bing.com/th/id/OIP.302zgzUHVpOuGmsmRZudiAHaHk?w=176&h=181&c=7&r=0&o=5&dpr=1.1&pid=1.7">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="name">Ahmad Bailani</h3>
+                                    <h4 class="title">film director</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="our-team">
+                                <div class="picture">
+                                    <img class="img-fluid" src="https://th.bing.com/th/id/OIP.hjFOYx5pbMGSQ2bODUjn6AHaHa?w=174&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="name">Iwan123</h3>
+                                    <h4 class="title">pelukis</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <script src="carousel.js"></script>
+    <script src="navbar.js"></script>
+
+</body>
+
+</html>

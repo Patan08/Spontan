@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <header>
+
+
+        <nav>
+            <div class="head-container">
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                                viewBox="0 96 960 960" width="26">
+                                <path
+                                    d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                            </svg></a></li>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li>
+                        <a href="search.html">Services</a>
+                    </li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="account.html">Account</a></li>
+
+
+                </ul>
+                <ul class="menubar">
+                    <ul class="left-menu">
+                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#F3F3F3">
+                                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                                </svg></a></li>
+                        <li class="hideOnMobile"><a href="home(3).html">SPONTAN</a></li>
+                    </ul>
+
+                    <ul class="right-menu">
+                        <li class="hideOnMobile"><a href="login.html">Log In</a></li>
+                        <li class="dropdown hideOnMobile">
+                            <a href="search.html">Services</a>
+                            <div class="dropdown-content">
+                                <a href="seniman.html">Seniman</a>
+                                <a href="senirupa.html">Seni Rupa</a>
+                                <a href="senimusik.html">Seni Musik</a>
+                                <a href="senimedia">Seni Media Baru</a>
+                            </div>
+                        </li>
+                        <li class="hideOnMobile"><a href="upload.html">Upload</a></li>
+                        <li class="hideOnMobile"><a href="account.html">Account</a></li>
+                    </ul>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Buat Jadwal Temu</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label for="artType">Hari</label>
+                <select id="artType" name="artType" onchange="showOptions()">
+                    <option value="newMedia">Pilih---</option>
+                    <option value="visual"> Senin</option>
+                    <option value="music">Selasa</option>
+                    <option value="newMedia">Rabu</option>
+                    <option value="newMedia">Kamis</option>
+                    <option value="newMedia">Jumat</option>
+                    <option value="newMedia">Sabtu</option>
+                </select>
+    
+                <div id="visualArtOptions" class="options">
+                    <label for="visualType">Pilih Jenis Konsultasi</label>
+                    <select id="visualType" name="visualType">
+                        <option value="newMedia">---Pilih---</option>
+                        <option value="">Dokter Gigi</option>
+                        <option value="painting">Dokter Umum</option>
+                        <option value="photography">Dokter anak</option>
+                    </select>
+                    <input type="file" id="visualFile" name="visualFile">
+                </div>
+    
+                <div id="musicOptions" class="options">
+                    <label for="musicGenre">Pilih Jenis Konsultasi</label>
+                    <select id="musicGenre" name="musicGenre">
+                        <option value="">---Pilih---</option>
+                        <option value="pop">Dokter Gigi</option>
+                        <option value="rock">Dokter umum</option>
+                        <option value="jazz">Dokter anak</option>
+                    </select>
+                    <input type="file" id="musicThumbnail" name="musicThumbnail">
+                    <input type="file" id="musicContent" name="musicContent">
+                </div>
+    
+                <div id="newMediaOptions" class="options">
+                    <label for="newMediaType">Pilih Jenis Konsultasi</label>
+                    <select id="newMediaType" name="newMediaType">
+                        <option value="">---Pilih---</option>
+                        <option value="film">Dokter Gigi</option>
+                        <option value="digitalArt">Dokter Umum</option>
+                    </select>
+    
+                    <div id="filmOptions" class="sub-options">
+                        <input type="file" id="filmThumbnail" name="filmThumbnail">
+                        <input type="file" id="filmContent" name="filmContent">
+                    </div>
+    
+                    <div id="digitalArtOptions" class="sub-options">
+                        <input type="file" id="digitalArtFile" name="digitalArtFile">
+                    </div>
+    
+                </div>
+    
+                <input type="text" id="title" name="title" placeholder="Title">
+                <textarea id="description" name="description" placeholder="Description"></textarea>
+    
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="navbar.js"></script>
+    <script src="upload.js"></script>
+</body>
+</html>
